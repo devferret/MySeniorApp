@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ตรวจครุภัณฑ์</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="fragment">fragment</string>
+    <string name="title_activity_show_data">ShowDataActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="google_maps_key">AIzaSyAYKlyPAKPk2W5UmxiYZodPtS4Y7xflQQo</string>
+
+    <string name="building1Lat">13.796005</string>
+    <string name="building1Lng">100.324903</string>
+    <string name="building2Lat">13.795702</string>
+    <string name="building2Lng">100.323627</string>
+    <string name="building3Lat">13.795794</string>
+    <string name="building3Lng">100.325880</string>
+</resources>

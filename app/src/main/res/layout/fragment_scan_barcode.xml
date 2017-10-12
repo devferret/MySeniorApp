@@ -1,0 +1,43 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".Fragment.ScanBarcodeFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:alpha="0.2"
+        android:scaleType="centerCrop"
+        android:src="@drawable/egmu"/>
+
+    <TextView
+        android:id="@+id/txtDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="แอพพลิเคชั่นตรวจครุภัณฑ์\nคณะวิศวกรรมศาสตร์ มหาวิทยาลัยมหิดล"
+        android:textSize="@dimen/fontLarge"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="@dimen/sizeX64"/>
+
+    <Button
+        android:id="@+id/btnScan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/sizeX104"
+        android:background="@drawable/corner_white"
+        android:padding="@dimen/sizeX16"
+        android:text="สแกนบาร์โค้ด"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/fontMedium"
+        android:drawableLeft="@drawable/barcode_primary"
+        android:drawablePadding="@dimen/sizeX8"/>
+
+</RelativeLayout>

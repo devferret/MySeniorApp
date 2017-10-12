@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/sizeX8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/sizeX8">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sizeX128"
+            android:layout_marginBottom="@dimen/sizeX4">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sizeX128"
+                android:scaleType="centerCrop"
+                android:src="@drawable/no_image"/>
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBlackAlpha"
+                android:padding="@dimen/sizeX4"
+                android:text="Object"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/fontSmall"
+                android:singleLine="true"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/sizeX4"
+            android:paddingTop="@dimen/sizeX4"
+            android:text="รหัสครุภัณฑ์"
+            android:singleLine="true"
+            android:textSize="@dimen/fontSmall"/>
+
+        <TextView
+            android:id="@+id/txtPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/sizeX4"
+            android:paddingTop="@dimen/sizeX4"
+            android:text="ราคา"
+            android:singleLine="true"
+            android:textSize="@dimen/fontSmall"/>
+
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/sizeX4"
+            android:paddingTop="@dimen/sizeX4"
+            android:text="สภาพของสินทรัพย์"
+            android:singleLine="true"
+            android:textSize="@dimen/fontSmall"/>
+    </LinearLayout>
+
+</LinearLayout>

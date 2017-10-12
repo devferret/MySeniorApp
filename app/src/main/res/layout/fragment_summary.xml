@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/spinnerYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/sumChart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtWorked"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/fontSmall"
+                android:textColor="@color/workedColor"
+                android:padding="@dimen/sizeX8"/>
+
+            <TextView
+                android:id="@+id/txtWaste"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/fontSmall"
+                android:textColor="@color/wasteColor"
+                android:padding="@dimen/sizeX8" />
+
+            <TextView
+                android:id="@+id/txtNotNecessary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/fontSmall"
+                android:textColor="@color/notNecessaryColor"
+                android:padding="@dimen/sizeX8" />
+
+            <TextView
+                android:id="@+id/txtNotFound"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/fontSmall"
+                android:textColor="@color/notFoundColor"
+                android:padding="@dimen/sizeX8" />
+
+            <TextView
+                android:id="@+id/txtUnChecked"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/fontSmall"
+                android:textColor="@color/unCheckedColor"
+                android:padding="@dimen/sizeX8" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

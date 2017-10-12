@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".Fragment.SearchFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edtSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/sizeX4"
+            android:layout_toLeftOf="@+id/btnFilter"
+            android:background="@drawable/corner_stroke_black_alpha"
+            android:drawableLeft="@drawable/magnify_black_alpha"
+            android:drawablePadding="@dimen/sizeX8"
+            android:hint="ค้นหาชื่อ , รหัสครุภัณฑ์ , ราคา"
+            android:imeOptions="actionSearch"
+            android:inputType="textNoSuggestions"
+            android:paddingBottom="@dimen/sizeX4"
+            android:paddingLeft="@dimen/sizeX8"
+            android:paddingRight="@dimen/sizeX8"
+            android:paddingTop="@dimen/sizeX4"
+            android:singleLine="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/fontMedium" />
+
+        <ImageView
+            android:id="@+id/btnFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:alpha="0.6"
+            android:padding="@dimen/sizeX8"
+            android:src="@drawable/ic_filter_list" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:fadingEdgeLength="@dimen/sizeX24"
+        android:requiresFadingEdge="vertical"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textNoData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="ไม่พบข้อมูล"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/fontMedium"
+            android:visibility="gone" />
+
+        <GridView
+            android:id="@+id/grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryAlpha80"
+            android:divider="@android:color/transparent"
+            android:fadingEdgeLength="@dimen/sizeX32"
+            android:numColumns="2"
+            android:requiresFadingEdge="vertical" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
